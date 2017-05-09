@@ -91,10 +91,10 @@ For protein 1ZXB, results resemble a different pattern. Most mutations at point 
 
 #### Conclusions:
 
-
-
-
-
+- Replacing a "very hydrophobic" amino acid with another might lead to the highest stabilizing effect in 4BMB
+- Point mutations at position 19 (for 10 different amino acids) in 4BMB lead to further stabilization of the protein
+- Point mutations in proteins can lead to either stabilization or destabilization of the structure
+- Changes in stability resulting from point mutations might lead to changes in (or loss of) a protein's function [1]
 
 
 #### References:
