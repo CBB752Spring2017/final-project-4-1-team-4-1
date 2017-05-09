@@ -27,8 +27,11 @@ Table of Contents
 
 
 ### Writing:
+
 The gene 3VKO codes for the Galectin-8 protein, which functions as a Beta-galactoside-binding lectin. Galectin-8 is thought to act as a membrane damage sensor during infections, and restricts the proliferation of pathogens by targeting them for autophagy. Galectin-8 also detects endosomal membrane rupture events by binding beta-galactoside ligands on the lumenal side of endosome membranes, which are exposed to the cytoplasm following rupture of the endosome. The mutation of interest studied here is F19Y, a mutation of a phenylalanine to a tyrosine.
+
 From an initial side-chain chemistry standpoint, this mutation should be relatively minor, as it occurs away from the binding pocket, and the residue does not appear to play a major role in the interaction of the two domains of the protein. F19 can be found as part of a beta-barrel structure near the interface of the domains, but was not found to make any direct contacts in the interface, instead being part of a beta sheet. From a space-filling perspective, the tyrosine mutation is about as large as phenylalanine, and therefore may disrupt the structural stability of the protein, but not in any majorly appreciable way.
+
 The F19I mutant, mutating the phenylalanine to an isoleucine, also has a minor role in the protein stability. The overall hydrophobic properties are similar, and so at worst the protein is destabilized, with the actual binding properties being minimally impacted. Similarly, F19L, mutating the phenylalanine to a leucine, should also have a minor role, as the hydrophobicity is not dramatically changed. Overall, there is more space in the structured regions by mutating from a phenylalanine to an isoleucine or a leucine, and so the structure of the protein and the flexibility of the beta-sheet is probably altered, but the actual protein should still have normal functionality and have minimal phenotypic effects.
 
 ### Coding:
