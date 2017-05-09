@@ -35,12 +35,23 @@ The F19I mutant, mutating the phenylalanine to an isoleucine, also has a minor r
 
 ### Coding:
 
-We have used the wildtype structure to investigate how this mutation will change the protein. The files 4BMB_F19.txt and 4BMB_F19Y.txt contain the repulsive Lennard-Jones energy for each side chain dihedral angle combination of these two residues in the protein core of 4BMB. Plot the total potential energy URLJ(c1, c2) =  involving interactions among side chain atoms as a function of c1 and c2. Discuss how much you expect the wildtype protein to change to accommodate this mutation.
+A) For the 4BMB F19 and F19Y residue, plot the total potential energy URLJ involving interactions among side chain atoms as a function of Chi_1 and Chi_2. Discuss how much you expect the wildtype protein to change to accommodate this mutation.
 
-A crystal structure exists for the F19Y mutation (4BME). Using the aligned files provided (4BMB_aligned.pdb, 4BME_aligned.pdb), calculate the root-mean-square deviation (rmsd) of the heavy atoms in the two structures. How might this rmsd be related to the stability of the protein?
+B) Calculate the root-mean-square deviation (rmsd) of the heavy atoms in the F19 and F19Y structures. How might this rmsd be related to the stability of the protein?
 
 #### Documentation:
 
+Codes, figures, and text files can be found in the StructAnal directory.
+
+A) To generate heatmap plot of repulsive Lennard Jones potential energies, run:
+
+ python 4BMB_Urlj_Heatmap.py -u1 4BMB_F19.txt -u2 4BMB_F19Y.txt
+
+To generate 3D plot of repulsive LEnnard Jones potential energies, run:
+
+ python 4BMB_Urlj.py -u1 4BMB_F19.txt -u2 4BMB_F19Y.txt
+
+B) 
 
 #### Results:
 
