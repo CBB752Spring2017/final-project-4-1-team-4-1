@@ -16,6 +16,7 @@ Table of Contents
 
 
 **Contributors**
+ 
  -Writing: Acer Xu
  
  -Coding: Yekaterina Kovalyova
