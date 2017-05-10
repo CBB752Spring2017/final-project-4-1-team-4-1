@@ -5,7 +5,7 @@ CBB752Spring17 Final Project - 4.1
 
 Three programs compare WT and mutant structures of the 4BMB protein.
 
-Comparing two residues in terms of repulsive Lennard Jones energies as a function of residue Chi_1 and Chi_2 angles.
+**Comparing two residues in terms of repulsive Lennard Jones energies as a function of residue Chi_1 and Chi_2 angles.**
 
  *A. For 3D plot of energy as a function of the dihedral angles, to run program:*
 
@@ -19,7 +19,7 @@ Comparing two residues in terms of repulsive Lennard Jones energies as a functio
 Both programs behave identically; the only difference the is plot(s) they spit out. Programs read in chi_1, chi_2, and energy values, converts them into 2D arrays (process uses hardcoded dimensions for arrays, not friendly for chi rotations of different values, but easily changeable) appropriate for plotting in 3D, and plots these arrays. While the 3D wiregrid plot may not be ideal representation, both proteins can be plotted simultaneously for easy qualitative comparison. All images pertaining to these data are called 4BMB_Urlj*. 
 	
 
-Comparing two proteins in terms of root-mean-square deviations of backbone heavy atoms.
+**Comparing two proteins in terms of root-mean-square deviations of backbone heavy atoms.**
 
 *To run program:* 
 
