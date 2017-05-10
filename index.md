@@ -43,7 +43,7 @@ B) Calculate the root-mean-square deviation (rmsd) of the heavy atoms in the F19
 
 Codes, figures, and text files can be found in the StructAnal directory.
 
-A) To generate *heatmap* plot of repulsive Lennard Jones potential energies, run:
+**A)** To generate *heatmap* plot of repulsive Lennard Jones potential energies, run:
 
     python 4BMB_Urlj_Heatmap.py -u1 4BMB_F19.txt -u2 4BMB_F19Y.txt
 
@@ -51,9 +51,10 @@ To generate *3D plot* of repulsive LEnnard Jones potential energies, run:
 
     python 4BMB_Urlj.py -u1 4BMB_F19.txt -u2 4BMB_F19Y.txt
 
-Both programs make two-dimensional arrays of the χ_1, χ_2, and energy data to generate the plots.
+Both programs make two-dimensional arrays of the χ1, χ2, and energy data to generate the plots.
 
-B) To calculate RMSD between the WT and mutant 4BMB, run:
+
+**B)** To calculate RMSD between the WT and mutant 4BMB, run:
 
     python 4BMB_RMSD.py -p1 4bmb_aligned.pdb -p2 4bme_aligned.pdb
 
