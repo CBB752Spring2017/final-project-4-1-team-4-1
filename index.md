@@ -11,9 +11,12 @@ Structure Analysis | Mutation F19Y is found in Karl Zimmer’s genome for 4BMB (
 
 Table of Contents
 -----------------------
-
-
-
+1. [Introduction](#introduction)
+2. [Writing](#writing)
+3. [Coding](#coding)
+4. [Pipeline](#pipeline)
+5. [Conclusions](#conclusions)
+6. [References](#references)
 
 **Contributors**
  
@@ -70,7 +73,7 @@ Program extracts the relevant information from each PDB file, finds coordinates 
 
 ![Heatmap of F19Y](https://github.com/CBB752Spring2017/final-project-4-1-team-4-1/blob/master/StructAnal/4BMB_Urlj_Heatmap_F19Y.png)
 
-**B)** The root-mean-square deviations (RMSD) of backbone heavy atoms tell us how different the backbone positions are between two proteins. The total RMSD between 4BMB and 4BME is 0.3 Angstroms. Shown below is the RMSD for each residue. It is clear that there are fluctuations in the RMSD, and highest deviations occur at residues ~15, ~55, ~85, and *especially* at ~73. (Note that at residue 19, where the mutation occurs, RMSD is relatively low.) These fluctuations suggest that the protein is somewhat flexible and capable of some movement, and thus maybe a bit unstable (as we would expect less movement to correlate with stability, and 
+**B)** The root-mean-square deviations (RMSD) of backbone heavy atoms tell us how different the backbone positions are between two proteins. The total RMSD between 4BMB and 4BME is 0.3 Angstroms. Shown below is the RMSD for each residue. It is clear that there are fluctuations in the RMSD, and highest deviations occur at residues ~15, ~55, ~85, and *especially* at ~73. (Note that at residue 19, where the mutation occurs, RMSD is relatively low.) These fluctuations suggest that the protein is somewhat flexible and capable of some movement, and thus maybe a bit unstable (as we would expect less movement to correlate with stability, and more movement to correlate with instability). Despite this, the fluctuations are actually fairly small (apart from the one residue that deviates over an Angstrom), suggesting that, realistically, the mutation is probably not changing the protein drastically.
 
 ![residue vs. RMSD](https://github.com/CBB752Spring2017/final-project-4-1-team-4-1/blob/master/StructAnal/4BMB_RMSD.png)
 
