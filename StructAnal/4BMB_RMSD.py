@@ -15,6 +15,7 @@ __email__ = "yekaterina.kovalyova@yale.edu"
 import argparse
 import numpy as np
 import math
+import matplotlib.pyplot as plt
 
 parser = argparse.ArgumentParser(description='Protein Structure Analysis')
 parser.add_argument('-p1', '--p1', help='protein structure 1', required=True)
@@ -28,7 +29,9 @@ def RMSD(pdb1, pdb2):
     (res2, atom2, r2) = processPDB(pdb2) #residue #, atom names, & coordinates from pdb file2
     
     n = 0 #total number of atoms compared for RMSD calculation    
-    rmsd = 0 #RMSD value
+    rmsd = 0 #for total rmsd value
+    RMSD = [] #RMSD for each residue
+    RES = [] #corresponding residue for RMSD[]
     
     bb1 = [0, 0, 0, 0] #backbone 1 [C, N, O, CA]
     bb2 = [0, 0, 0, 0] #backbone 2 [C, N, O, CA]
@@ -51,11 +54,22 @@ def RMSD(pdb1, pdb2):
         #Calculate RMSD for each of current backbone atoms
         for j in range (0, 4):
             if not math.isnan(bb1[0][0]):
+                RMSD.append( ( (np.linalg.norm(bb1[j] - bb2[j], 2, 0))**2 / 4) ** 0.5)
+                RES.append(i)
                 rmsd = rmsd + (np.linalg.norm(bb1[j] - bb2[j], 2, 0))**2
             else: #residue number was skipped
                 break
     rmsd = (rmsd / n) ** 0.5
-    print "RMSD = " + str(rmsd)
+    print "RMSD = " + str(rmsd) #print total RMSD
+    
+    #Plot RMSD for each residue
+    plt.figure()
+    plt.plot(RES, RMSD)
+    plt.axis([RES[0], RES[len(RES)-1], 0, max(RMSD)])
+    plt.xlabel('Residue')
+    plt.ylabel('Root-Mean-Square Deviation')
+    plt.title('RMSD for each residue of 4BMB')
+    plt.show()
 
 # Extracts residue #s, atoms, and coordinates from pdb file
 def processPDB(pdb):
