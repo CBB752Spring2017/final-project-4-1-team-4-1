@@ -3,21 +3,27 @@ CBB752Spring17 Final Project - 4.1
 
 **Yekaterina Kovalyova, CBB 752**
 
-Program analyzes WT and mutant proteins in terms of root-mean-square deviations of backbone heavy atoms, and repulsive Lennard Jones energies as a function of residue Chi_1 and Chi_2 angles. 
+Three programs compare WT and mutant structures of the 4BMB protein.
+
+Comparing two residues in terms of repulsive Lennard Jones energies as a function of residue Chi_1 and Chi_2 angles.
+
+ *A. For 3D plot of energy as a function of the dihedral angles, to run program:*
+
+	python 4BMB_Urlj.py -u1 4BMB_F19.txt -u2 4BMB_F19Y.txt
+
+ *B. For heatmap of energy as a function of the dihedral angles, to run program:*
+
+	python 4BMB_Urlj_Heatmap.py -u1 4BMB_F19.txt -u2 4BMB_F19Y.txt
+
+
+Both programs behave identically; the only difference the is plot(s) they spit out. Programs read in chi_1, chi_2, and energy values, converts them into 2D arrays (process uses hardcoded dimensions for arrays, not friendly for chi rotations of different values, but easily changeable) appropriate for plotting in 3D, and plots these arrays. While the 3D wiregrid plot may not be ideal representation, both proteins can be plotted simultaneously for easy qualitative comparison. All images pertaining to these data are called 4BMB_Urlj*. 
+	
+
+Comparing two proteins in terms of root-mean-square deviations of backbone heavy atoms.
 
 *To run program:* 
 
-    python 4BMB.py -p1 4bmb_aligned.pdb -p2 4bme_aligned.pdb -u1 4BMB_F19.txt -u2 4BMB_F19Y.txt
+    python 4BMB_RMSD.py -p1 4bmb_aligned.pdb -p2 4bme_aligned.pdb
 
 
-Program has two main functions
-
-
-
-Program reads in DNA sequence (processed in a simple text file) and text file containing at least one guide RNA sequence (excluding the PAM sequence). It searches DNA sequence for a designated PAM sequence (default 'NGG'), uses Smith-Waterman alignment algorithm to align the DNA's 20 nucleotides before PAM sequence with the gRNA (note if gRNA originally had uracils, they are changed to thymines for comparison to DNA), and writes full DNA with aligned gRNA to gRNAtargets.txt. Program also checks to see any off-target effects on reverse complement of given DNA.
-
-User can dictate maximum number of mismatches before gRNA is considered valid (default 5), and alignment parameters. Note, no scoring matrix used here; match score is the same for all four nucleotides, and dictated by user (default 1).
-
-Since no clear "target" is provided, perfect alignment score is considered "on-target". Only places where gRNA aligns with at most max number of mismatches are written to output. For each such place, output shows the gRNA sequence, the full DNA sequence, and the aligned gRNA; further, output tells if this is "target" or "off-target" based on alignment score, and whether we are looking at the forward DNA strand or reverse complement DNA strand.
-
-Sample DNA sequence, gRNA sequences, and resulting output are provided.
+Program processes PBD files to extract relevant info (residue #, atom name, coordinates), iterates through each residue, gets coordinates of each heavy backbone atom (C, N, O, Calpha, hardcoded and not friendly for changing which atoms to consider), and calculates the root-mean-square deviation for these four atoms between the WT and mutant proteins. Note, it does not make sense to use side-chain atoms since if multiple residues are different, there would be no corresponding atoms to calculate RMSD. Program plots RMSD for each residue. Program spits out RMSD for the entire protein.
