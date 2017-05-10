@@ -62,11 +62,13 @@ Program extracts the relevant information from each PDB file, finds coordinates 
 
 #### Results:
 
+**A)** Phenylalanine and tyrosine are very similar in shape. The repulsive Lennard Jones energies associated with their rotations dip in very similar areas (χ1≈170°, χ2≈60°), suggesting that both are likely oriented in very similar positions with similar dihedral angles. The 3D plot shows direct comparison between the two residues, where F19Y dihedral angle allowance, based on energy dip, is considerably narrower than for F19, perhaps due to the protruding -OH limiting movement. The heatmaps show more cleanly the allowed dihedral angles.
 
+![3D plot of F19 and F19Y] (https://github.com/CBB752Spring2017/final-project-4-1-team-4-1/blob/master/StructAnal/4BMB_Urlj_view1.png)
 
+![Heatmap of F19](https://github.com/CBB752Spring2017/final-project-4-1-team-4-1/blob/master/StructAnal/4BMB_Urlj_Heatmap_F19.png)
 
-
-
+![Heatmap of F19Y](https://github.com/CBB752Spring2017/final-project-4-1-team-4-1/blob/master/StructAnal/4BMB_Urlj_Heatmap_F19Y.png)
 
 ### Pipeline: 
 Download the 4BMB structure from the Protein DataBank. Using the Rosetta Software Suite, generate 10 different protein mutations at location 19 (choose 10 of the 20 amino acids). Obtain the relaxed protein structure following each mutation from Rosetta and compare the energy of the resulting structures. Which mutant is most stabilizing and which is most destabilizing? Why do you think this is the case?
