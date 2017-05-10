@@ -50,7 +50,7 @@ Codes, figures, and text files can be found in the StructAnal directory.
 
     python 4BMB_Urlj_Heatmap.py -u1 4BMB_F19.txt -u2 4BMB_F19Y.txt
 
-To generate *3D plot* of repulsive LEnnard Jones potential energies, run:
+To generate *3D plot* of repulsive Lennard Jones potential energies, run:
 
     python 4BMB_Urlj.py -u1 4BMB_F19.txt -u2 4BMB_F19Y.txt
 
@@ -65,7 +65,7 @@ Program extracts the relevant information from each PDB file, finds coordinates 
 
 #### Results:
 
-**A)** Phenylalanine and tyrosine are very similar in shape. The repulsive Lennard Jones energies associated with their rotations dip in very similar areas (χ1≈175°, χ2≈60°), suggesting that both are likely oriented in very similar positions with similar dihedral angles. The 3D plot shows direct comparison between the two residues (blue = F19, red = F19Y), where F19Y dihedral angle allowance, based on energy dip, is considerably narrower than for F19, perhaps due to the protruding -OH limiting movement. The heatmaps show more cleanly the allowed dihedral angles, and the heatmaps are not very different from one another. Thus, since F19 and F19Y are likely to be in approximately similar positions, we would expect that the rest of the protein will not deviate much from its original structure to accomodate the mutation
+**A)** Phenylalanine and tyrosine are very similar in shape. The repulsive Lennard Jones energies associated with their rotations dip in very similar areas (χ1≈175°, χ2≈60°), suggesting that both are likely oriented in very similar positions with similar dihedral angles. The 3D plot shows direct comparison between the two residues (blue = F19, red = F19Y), where F19Y dihedral angle allowance, based on energy dip, is considerably narrower than for F19, perhaps due to the protruding -OH limiting movement. The heatmaps show more cleanly the allowed dihedral angles, and the heatmaps are not very different from one another. Thus, since F19 and F19Y are likely to be in approximately similar positions, we would expect that the rest of the protein will not deviate much from its original structure to accomodate the mutation.
 
 ![3D plot of F19 and F19Y](https://github.com/CBB752Spring2017/final-project-4-1-team-4-1/blob/master/StructAnal/4BMB_Urlj_view1.png)
 
