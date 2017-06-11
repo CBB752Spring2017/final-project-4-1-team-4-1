@@ -18,14 +18,6 @@ Table of Contents
 5. [Conclusions](#conclusions)
 6. [References](#references)
 
-**Contributors**
- 
- -Writing: Acer Xu
- 
- -Coding: Yekaterina Kovalyova
- 
- -Pipeline: Hussein Mohsen
-
 ### Introduction:
 
 The gene 3VKO codes for the Galectin-8 protein, which functions as a Beta-galactoside-binding lectin. Galectin-8 is thought to act as a membrane damage sensor during infections, and restricts the proliferation of pathogens by targeting them for autophagy. Galectin-8 also detects endosomal membrane rupture events by binding beta-galactoside ligands on the lumenal side of endosome membranes, which are exposed to the cytoplasm following rupture of the endosome. The mutation of interest studied here is F19Y, a mutation of a phenylalanine to a tyrosine.
