@@ -1,8 +1,6 @@
 CBB752Spring17 Final Project - 4.1
 =====================
 
-**Yekaterina Kovalyova, CBB 752**
-
 Three programs compare WT and mutant structures of the 4BMB protein.
 
 **Comparing two residues in terms of repulsive Lennard Jones energies as a function of residue Chi_1 and Chi_2 angles.**
